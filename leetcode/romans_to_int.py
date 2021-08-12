@@ -33,7 +33,7 @@ while(True):
 
 '''
 Things to learn:
-i) order matters: when a lower value is after higher value: just add else subtract
+i) order matters: when a lower value is after higher value: just add, else subtract
 ii) Move backwards, as you will be able to figure out if you need to add or subtract
 
 

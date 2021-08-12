@@ -1,5 +1,6 @@
 '''
 Design a stack that returns the minimum element in constant time
+LeetCode: 155
 '''
 class MinStack:
 

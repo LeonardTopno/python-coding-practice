@@ -25,9 +25,10 @@ def productOfArrExceptSelf1(arr):
     return product
 
 # Driver Code
-arr_ = [1,2,3,4]
-res = productOfArrExceptSelf(arr_)
-print(res)
+if __name__=="__main__":
+    arr_ = [1,2,3,4]
+    res = productOfArrExceptSelf(arr_)
+    print(res)
 
 '''
 --- Approach: 

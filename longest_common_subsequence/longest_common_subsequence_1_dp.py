@@ -14,7 +14,7 @@ def longestCommonSubsequence(text1, text2):
                 dp[i+1][j+1]=max(dp[i][j+1], dp[i+1][j])
     
     #print("lcs:", ''.join(lcs))
-    print(dp)
+    #print(dp)
     return dp[-1][-1], lcs
 
 #Driver Code

@@ -41,7 +41,7 @@ res_arr[i] = res_arr_left[i] * res_arr_right[i]
 
 --- Leo's Ananlysis
 
-1. We are asked to do this in O(n) => which means we have to traverse the array once (single pass )or more than once but NOT NESTED. 
+1. We are asked to do this in O(n) => which means we have to traverse the array once (single pass) or more than once but NOT NESTED. 
 Nesting will make it O(n^2) or O(n^3) based on the num of times it has been nested. 
 
 2. If we are asked to do it in constant space  which is O(1), which means we are not to use any additional array.

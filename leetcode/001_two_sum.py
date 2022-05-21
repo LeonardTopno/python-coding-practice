@@ -1,6 +1,6 @@
 '''
 Given an array of integers 'nums' and an integer 'target', 
-return indices of two numbers that add uptp target.
+return indices of two numbers that add upto target.
 
 You may assume that EACH INPUT WOULD HAVE EXACTLY ONE SOLUTION, 
 and you may not use the same element twice.
@@ -34,7 +34,7 @@ if __name__ == "__main__":
 
         1. Maintain a mapping
                     num --> index
-        2. Check if (target - num) has been already found, And stored in mapping
+        2. Check if (target - num) has been already found, And store in mapping
 
         3. It is given that there exists only 1 pair such that elem1 + elem2 = target. => elem2 = target - elem1
         

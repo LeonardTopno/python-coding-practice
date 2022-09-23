@@ -2,22 +2,22 @@
 import collections
 def countStudents(students, sandwiches):
     queue = collections.deque(students)
-    #queue = deque(students) #Doubly ended queue
+    # queue = deque(students) #Doubly ended queue
 
     for sandwich in sandwiches:
 
         if sandwich in queue:
             while queue[0] != sandwich:
                 x = queue.popleft()
-                queue.append(x) # append is always right side
+                queue.append(x)  # append is always right side
                 
-            queue.popleft() # student took sandwich of his choice and left. At the end, it is better to count the num of students left.
+            queue.popleft()   # student took sandwich of his choice and left. At the end, it is better to count the num of students left.
             
         else:      
             return len(queue)
     
 
-    return 0 # if sandwich hi nahi hai toh students bhi nahi bache hain, isliye hungry students = 0
+    return 0   # if sandwich hi nahi hai toh students bhi nahi bache hain, isliye hungry students = 0
 
 # Driver Code
 if __name__ == "__main__":

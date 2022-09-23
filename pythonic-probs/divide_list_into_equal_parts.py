@@ -1,6 +1,6 @@
-'''
+"""
 generator example
-'''
+"""
 
 def getChunks(lst, chunk_size):
     for i in range(0, len(lst), chunk_size):

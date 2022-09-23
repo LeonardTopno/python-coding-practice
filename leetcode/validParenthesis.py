@@ -15,7 +15,7 @@ def isValidParenthesis(s):
         if parenthesis in lookup:                     # in lookup -> looks for key; in lookup.value --> looks for value
             stack.append(parenthesis)
         
-        # current parenthesis is a closing bracket and stack is non-empty
+        # else current parenthesis is a closing bracket and stack is non-empty
         elif stack and lookup[stack[-1]] == parenthesis:
             stack.pop()
         

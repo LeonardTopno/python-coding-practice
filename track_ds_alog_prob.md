@@ -1,6 +1,6 @@
 
 ---
-Date: 2022-09-23 | Friday
+### Date: 2022-09-23 | Friday
 #### Problem: Find two non-overlapping pairs having the same sum in an array.
 
 `Topics touched upon`

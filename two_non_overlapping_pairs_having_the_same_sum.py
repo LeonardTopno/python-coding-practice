@@ -2,43 +2,43 @@
 Given an UNSORTED integer array, find two non-overlapping pairs in it having the same sum of pair
 """
 
-# Function to find two non-overlapping pairs with the same sum in a list
+# Function to find two non-overlapping pairs having the same sum in a list
 
 
-def find_pairs(myarr):
+def find_pairs(arr):
     # create an empty dictionary
-    # key -> distinct sum a pair could have
-    # value -> list, storing the index every pair having that sum
-    mydict = {}
+    # keys: sum of pairs
+    # values: list, storing the indices of every pair, whose total is that sum
+    lookup = {}
 
-    # consider every pair (myarr[i], myarr[j]), where `j>i`
-    for i in range(len(myarr)-1):
-        for j in range(i+1, len(myarr)):
+    # consider every pair (arr[i], arr[j]), where `j>i`
+    for i in range(len(arr)-1):
+        for j in range(i+1, len(arr)):
 
             # calculate the sum of current pair
-            sum = myarr[i] + myarr[j]
+            sum_ = arr[i] + arr[j]
 
             # check if the sum is already present in the dictionary
-            if sum in mydict:
+            if sum_ in lookup:
 
-                # check every other pair in dict, having the same sum
-                for pair in mydict[sum]:  # for m, n in mydict[sum_of_pair]:  # Two lines could be just 1
-                    m, n = pair     # unzipping a sequence (tuple, here)
+                # check every other pair, having the same sum
+                for pair in lookup[sum_]:  # for m, n in lookup[sum_]:  # Two lines could be just 1
+                    m, n = pair     # unpacking pair, @type pair: tuple
 
                     # check if pairs don't overlap (are non-overlapping), print them and return
-                    if (m != i and n != j) and (n != i and n != j):
-                        print('First Pair:', (myarr[i], myarr[j]))
-                        print('Second Pair:', (myarr[m], myarr[n]))
+                    if (m != i and m != j) and (n != i and n != j):
+                        print('First Pair:', (arr[i], arr[j]))
+                        print('Second Pair:', (arr[m], arr[n]))
                         return
 
             # We have a "return" in the previous section (if sum is already in dict condition),
-            # so the control will get into this section only if the above condition is not true, i.e. sum is not
-            # already present in map(dict here)
+            # so the control will get into this section only when the above condition is not true, i.e. sum is not
+            # already present in dict(lookup)
 
-            # If the sum not already in mydict, Insert sum into the dict and map it to its pair
-            # (Here, one could also write else:, or also could write the exact condition - if sum not in mydict:)
-            mydict.setdefault(sum, []).append((i, j))
-            print(mydict)
+            # If the sum not already in lookup, Insert sum in the dict(lookup) and map it to its pair
+            # (Here, one could also write else:, or also could write the exact condition - if sum not in lookup:)
+            lookup.setdefault(sum_, []).append((i, j))
+            print(lookup)
 
 
     print('No non-overlapping pairs present')
@@ -46,16 +46,16 @@ def find_pairs(myarr):
 
 # Driver Code
 if __name__ == "__main__":
-    myarr = [3, 4, 7, 3, 4]
-    myarr = [1, 7, 9, 3]
-    myarr = [1, 7, 9, 3]
+    arr = [3, 4, 7, 3, 4]
+    # arr = [1, 7, 9, 3]
+    # arr = [1, 7, 9, 3]
 
-    find_pairs(myarr)
+    find_pairs(arr)
 
-""" alternative to oneliner:  mydict.setdefault().append()
+""" alternative to oneliner:  lookup.setdefault().append()
 
-if sum not in mydict:
-    mydict[sum] = []
-mydict[sum].append((i,j))
+if sum_ not in lookup:
+    lookup[sum_] = []
+lookup[sum_].append((i,j))
 """
 

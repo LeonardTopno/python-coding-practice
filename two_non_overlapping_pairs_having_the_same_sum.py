@@ -37,7 +37,7 @@ def find_pairs(arr):
 
             # If the sum not already in lookup, Insert sum in the dict(lookup) and map it to its pair
             # (Here, one could also write else:, or also could write the exact condition - if sum not in lookup:)
-            lookup.setdefault(sum_, []).append((i, j))
+            lookup.setdefault(sum_, []).append((i, j))  # the return value of lookup.setdefault() is as empty list, hence we can use list method append()
             print(lookup)
 
 

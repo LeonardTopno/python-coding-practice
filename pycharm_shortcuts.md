@@ -36,4 +36,5 @@
 - `ctrl+Left Arrow` : Switch to the Left Screen
 - `ctrl+Up Arrow` : Minimise all Screens on the Top
 - `ctrl+Down Arrow` : Undo(Minimise all Screens on the Top)
+- `cmd+shift+T` (⌘⇧T) : Reopen an accidentally closed Tab on Chrome Browser
 - 

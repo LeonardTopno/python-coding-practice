@@ -21,7 +21,7 @@ def find_pairs(arr):
             # check if the sum is already present in the dictionary
             if sum_ in lookup:
 
-                # check every other pair, having the same sum
+                # traverse through every other pair, having the same sum
                 for pair in lookup[sum_]:  # for m, n in lookup[sum_]:  # Two lines could be just 1
                     m, n = pair     # unpacking pair, @type pair: tuple
 
@@ -41,7 +41,7 @@ def find_pairs(arr):
             print(lookup)
 
 
-    print('No non-overlapping pairs present')
+    print('No non-overlapping pairs with the same sum present')
 
 
 # Driver Code

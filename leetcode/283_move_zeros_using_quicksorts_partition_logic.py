@@ -7,20 +7,23 @@ The PARTITIONING LOGIC reads all the elem_s and swaps every non-zero (non-pivot)
 """
 
 
-def move_zeros_to_end(arr_):
+def move_zeros_to_end(arr):
     j = 0  # 'j' is supposedly meant to store the index of pivot(zero) (first occurrence of)
 
-    for k in range(len(arr_)):
-        if arr_[k]:  # checking if the elem is non-zero, if True, Swap
-            arr_[j], arr_[k] = arr_[k], arr_[j]
+    for k in range(len(arr)):
+        if arr[k]:  # checking if the elem is non-zero, if True, Swap
+            arr[k], arr[j] = arr[j], arr[k]
             j += 1
 
 
 # Driver Code:
 if __name__ == "__main__":
-    arr_ = [6, 0, 8, 2, 3, 0, 4, 0, 1]
-    move_zeros_to_end(arr_)
-    print(arr_)
+    arr = [6, 0, 8, 2, 3, 0, 4, 0, 1]
+    move_zeros_to_end(arr)
+    print(arr)
 
 
-
+"""
+Point to note: 
+1. 'arr' is not a reserved keyword in Python3 
+"""

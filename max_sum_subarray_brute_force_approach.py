@@ -21,6 +21,11 @@ def get_max_sum(arr, k):
     max_sum = INT_MIN  # Initializing output result
 
     n = len(arr)
+    # n must be greater than k
+    if n < k:
+        print("Invalid Input")
+        return -1
+
     for i in range(n - k + 1):
         # i will be 0,1,2,... leaving the last k elem, (n-k+1), +1 becoz we will be dealing with index may be
 

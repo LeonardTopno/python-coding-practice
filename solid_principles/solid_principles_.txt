@@ -1,0 +1,43 @@
+SOLID stands for
+
+S: Single Responsibility Principle
+O: Open/Closed Principle [OECM]
+L: Liskov's Substituion Principle
+I : Iterface segregation Principle
+D : Dependecy Inversion Principle
+
+
+
+
+
+1. Single Responsibility Principle
+A software component (basically a class) must have only one responsibility. It must have only one reason to change. If you need to modify the class for different reasons, this means something( an abstraction) is missing and you need to fix this.
+
+2. Open/Closed Principle
+ OECM - A class must be open to Extension but Closed to Modeification
+
+3. Liskov's Substituiton Principle
+    If S is a subtupe of T,
+    then objects of type T may be replced by objects of type S,
+    without breaking the program 
+
+    Alternatively, this can be expressed as "Derived classes must be 
+    substitutable for their BASE Classes"
+
+    In Simpler words, if a subclass redefines a function also present in 
+    the parent class, a clinet-user should ot be nnoticing anny difference
+    in behaviour, and it is a substitute for the base class.
+
+    Model your Classes based on behaviours, not on properties.
+    Model your data based on properties, not on behaviour.
+
+
+4. Interface Segregation Principle:
+Instead of one fat interface, create interfaces as small as possible based on a group of methods each one serving one submodule.  
+
+5. Dependenncy Inversion Principle
+    The main motto of the dependency inversion is 
+    Any higher classes should always depend upon the abstraction of the class rather than the detail.
+    Dependency inversion talks about the coupling between the different classes or modules. 
+    It focuses on the approach where the higher classes are not dependent on the lower classes 
+    instead depend upon the abstraction of the lower classes.

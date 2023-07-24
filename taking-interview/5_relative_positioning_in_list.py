@@ -20,16 +20,33 @@ def bring_to_the_beginning_of_list():
 
     return fruits_list
 
-"""
+
 while True:
     print(bring_to_the_beginning_of_list())
-"""
 
-# One liner for the same function
+
+# ------ One liner for the same function ---------
+
+""""
 item = "Durian"
-
 fruits_list.insert(0, fruits_list.pop(fruits_list.index(item)))
 print(fruits_list)
+"""
 
+# Leo's: Takeaways from this problem
+"""
+1) list.insert() func takes two positional arguments - index and item_to_be_inserted
+it does not alter the relative position of the rest of the elements.
+
+2) list.pop() func takes index (not item) as its argument. 
+    fruits_list.pop(3) : Correct
+    fruits_list.pop("Coconut") : Incorrect
+    
+3) the output of .pop(index_) is the item at INDEX index_. It is can stored in a variable at used later.
+
+4) use of list.index() func. 
+    fruits_list.index("Coconut")
+ 
+"""
 
 

@@ -9,7 +9,8 @@ We look for numbers whose sum is any constant C.
 
 # Naive RECURSIVE FUNCTION to check if triplet exists in a list with given target
 
-def getTripletSum(arr, target):
+
+def get_triplet_sum(arr, target):
 
     
     look_up = {}
@@ -51,10 +52,10 @@ if __name__ == "__main__":
     arr =  [2,7,4,0,9,5,1,3] #[-1,0,1,2,-1,-4]
     target = 6 #0   
 
-    print(getTripletSum(arr, target))
+    print(get_triplet_sum(arr, target))
 
     '''
-    if getTripletSum(arr, target):
+    if get_triplet_sum(arr, target):
         print("Triplet exists")
     else:
         print("Triplet does not exists")
@@ -62,4 +63,4 @@ if __name__ == "__main__":
 
 
 
-# Tuple has no .sort() func, only List has .sort()
+# tuple has no ".sort()" func, only list has ".sort()"

@@ -1,7 +1,7 @@
 """
 Given an array of integers of size ‘n’,
 Our aim is to calculate the MAXIMUM sum of ‘k’ consecutive elements in the array.
-Leo's Note: In subarray, the elems are in the same sequence
+Leo's note: In subarray (and also in substring), the elems are in the same sequence
 """
 # O(n*k) solution for finding the maximum sum of the subarray of size k.
 # We have NESTED LOOP, where outer loop is of O(n) and inner loop of O(k)
@@ -21,13 +21,21 @@ def get_max_sum(arr, k):
     max_sum = INT_MIN  # Initializing output result
 
     n = len(arr)
-    # n must be greater than k
-    if n < k:
+    # k should be smaller than n
+    if k > n:
         print("Invalid Input")
         return -1
 
     for i in range(n - k + 1):
-        # i will be 0,1,2,... leaving the last k elem, (n-k+1), +1 becoz we will be dealing with index may be
+        # Our requirement is : We have to iterate till the point(or index) where
+        # we are left with only last 'k' elems in the array.
+
+        # i will start from 0 and then move on to 1,2,3 and so on... till a point (or index)
+        # where last k elem are left in the array
+
+        # In (n-k+1), we did +1 bcoz we are dealing with range() func, and in range(), counting beings from 0 and
+        # (also the arr index beings from 0) AND range() fun does not include the 'stop' limit
+        # so, did +1 so that the last elem (before the last k elem begins) is not missed out.
 
         curr_sum = 0
         for j in range(k):   # j will be 0,1,2,3...k-1

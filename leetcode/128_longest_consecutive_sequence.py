@@ -39,5 +39,14 @@ SOl: https://leetcode.com/problems/longest-consecutive-sequence/solutions/127576
 Note: 
 The solution is official solution but Leo needs to comment it and make it his own style 
 
+Intuition: 
+    It turns out that our initial brute force solution was on the right track, but missing a few optimization 
+    necessary to reach O(n) Time Complexity
 
+Algorithm:
+    The optimized algorithm contains only two changes from the brute force approach:
+    i) The numbers are stored in a HashSet (or Set, in Python) to allow O(1) lookups, 
+    ii) and we only attempt to build sequences from numbers that are not already a part of longer sequence 
+        This is accomplished by first ensuring that the number that would immediately preceed the current number is a 
+        sequence is not present, as that number would necessarily be part of a longer sequence.
 """

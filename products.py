@@ -1,7 +1,7 @@
 def getProductsOfAllExceptAtIndex(given_array):
     products = [1] 
 
-    for i in range (1, len(given_array)):
+    for i in range(1, len(given_array)):
         products.append(given_array[i-1] * products[-1])
 
     products_right = 1

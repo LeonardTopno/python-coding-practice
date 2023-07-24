@@ -1,6 +1,8 @@
-import pyautogui,time
+import pyautogui
+import time
 
 while True:
     pyautogui.FAILSAFE = False
     pyautogui.moveRel(0, 2)
-    time.sleep(55)   
+    time.sleep(55)
+

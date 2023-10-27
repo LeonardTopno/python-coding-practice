@@ -1,6 +1,5 @@
 # Python program to print PRIME Numbers between a given interval
 
-
 start = 2
 end = 10
 

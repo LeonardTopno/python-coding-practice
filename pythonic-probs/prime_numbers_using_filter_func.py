@@ -9,7 +9,7 @@ def is_prime(num):
     for _ in range(2, (num//2)+1):
         if num % _ == 0:
             return False
-        return True
+    return True
 
 
 if __name__ == "__main__":
@@ -17,18 +17,11 @@ if __name__ == "__main__":
 
 """
 
-1) The user-defined function used in the filter function should be mentioned without ()
-2) The user-defined function used in pythonic filter function should be returning boolean results,
+1) The user-defined function to be used in the filter function should be mentioned without ()
+2) The user-defined function to be used in pythonic filter function should be returning boolean results,
     only then it can be used in filter function 
 
 Moto of the question in interview:
 If one knows the use of filter function.
 If one know how to find out if a number is Prime or not
 """
-
-
-
-
-
-
-

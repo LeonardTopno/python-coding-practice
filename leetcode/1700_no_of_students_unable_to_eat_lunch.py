@@ -1,6 +1,7 @@
-#from collections import deque
-import collections
-def countStudents(students, sandwiches):
+import collections  # from collections import deque
+
+
+def count_students(students, sandwiches):
     queue = collections.deque(students)
     # queue = deque(students) #Doubly ended queue
 
@@ -15,15 +16,15 @@ def countStudents(students, sandwiches):
             
         else:      
             return len(queue)
-    
 
     return 0   # if sandwich hi nahi hai toh students bhi nahi bache hain, isliye hungry students = 0
 
+
 # Driver Code
 if __name__ == "__main__":
-    students = [1,1,1,0,0,1]
-    sandwiches = [1,0,0,0,1,1]
+    students = [1, 1, 1, 0, 0, 1]
+    sandwiches = [1, 0, 0, 0, 1, 1]
 
-    studentsUnableToEatLunch = countStudents(students, sandwiches)
+    studentsUnableToEatLunch = count_students(students, sandwiches)
     print("Student Unable to Eat Lunch: ", studentsUnableToEatLunch)
 

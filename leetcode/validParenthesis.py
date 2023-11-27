@@ -25,8 +25,8 @@ def isValidParenthesis(s):
         else:
             return False  # Not a Valid Parenthesis
 
-    '''Finally when we have gone through our entire loop, our stack should be empty in case of Valid Parenthesis'''
-    return stack == []  # At end, check if stack is empty list. If empty, then Valid Parenthesis,
+    # At end, check if stack is empty list. If empty, then Valid Parenthesis,
+    return stack == []
     # we got matching opening branches for all closing braces found
 
 

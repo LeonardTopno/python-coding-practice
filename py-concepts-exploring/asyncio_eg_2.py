@@ -26,6 +26,7 @@ wait for 2 sec
 2
 A
 wait for 1 sec
+B
 ------
 Clearly we don't want this. This is again like a synchronous programming only.
 """

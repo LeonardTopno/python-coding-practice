@@ -12,7 +12,7 @@ def is_valid_parenthesis(exp):
             stack.append(parenthesis)
 
         # if parenthesis is a close bracket, check if the prev parenthesis is an open bracket
-        elif stack and parenthesis == look_up[stack[-1]]:
+        elif stack and parenthesis == look_up[                  stack[-1]]:
             stack.pop()
 
         else:

@@ -1,10 +1,10 @@
 """
-Tracking Execution Time of 3 coroutines which sleeps for 1 sec each
+Measuring Execution Time of 3 coroutines which sleeps for 1 sec each
 """
 
 import asyncio
 
-from .n1_coroutines import simple_coroutine  # Importing our coroutine
+from n1_coroutines import simple_coroutine  # Importing our coroutine
 
 
 async def main():
@@ -27,7 +27,7 @@ Output:
 """
 
 """ Leo's Note
-What else to learn from this program
-i) How to code to to execution time of a function (time taken by a function to complete)
+What else to learn from this program?
+i) How to code to measure execution time of a function (time taken by a function to complete)
 ii)  
 """

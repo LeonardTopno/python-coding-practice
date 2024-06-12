@@ -1,7 +1,7 @@
 """
 LC 217
 Approach 1: The brute force (naive approach) involves comparing each element in the array with every other element if it is same element.
-If any dupicate is foind, return True
+If any dupicate is found, return True
 
 Time Complexity: O(n^2) or O(nxn)
 """

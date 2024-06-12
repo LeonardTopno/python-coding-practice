@@ -9,7 +9,7 @@ Mantra: The keys of the hash Map Set will necessarly have to be unique (no dupli
         If no, then add the elem to dictionary. Use my_dict.get(key, default_value) function.
         
         Leo's Opinion: In my opinion, this approach is over engineered. And should be avoided. It just gives extra information which is not asked in the question.
-        The extra information is: It keeps a track of the count o occurances of each elem.
+        The extra information is: It keeps a track of the count of occurances of each elem.
 
 Time Complexity: O(n) as we are iterating the array once and lookup in the dictionary takes O(1). Hence O(n) + O(1) = O(n)
 Space Complexity: O(n) as we are introducing a Data Structure - set which can have a max of n elems  

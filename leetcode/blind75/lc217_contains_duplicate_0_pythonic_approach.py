@@ -45,7 +45,7 @@ Time Complexity: O(n) where n is the length of the array
 
         2. Comapring the lengths: The lengths of the list abd the set can be compared in constant time, O(1).    
     
-        Overall, the Time Complexity is domianted by creation of the set:
+        Overall, the Time Complexity is dominated by creation of the set:
         O(n)
 
         i.e. O(n) + O(1) = O(n) 

@@ -1,5 +1,5 @@
 """
-Approach 2: Appraoch is to sort the array using list.sort(). Then check if any of the ADJACENT ELEMENTS are same (equal). 
+Approach 2: Approach is to sort the array in-place using list.sort(). Then check if any of the ADJACENT ELEMENTS are same (equal). 
 Mantra:  SORTING helps in bringing duplicates together, hence simplifies the check.
 
 Time Complexity: Sorting the arr - O(nlog n)   +   Iterating the arr - O(n)       = O(n log n) 

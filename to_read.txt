@@ -1,0 +1,5 @@
+# About TimSort Algorithm
+
+https://skerritt.blog/timsort/
+
+https://ericmervin.medium.com/what-is-timsort-76173b49bd16

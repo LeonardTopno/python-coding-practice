@@ -8,8 +8,8 @@ class Solution(object):
         :rtype: (int, List[int])
         """
         max_sum = (-sys.maxsize) - 1 
-        largest_sum_subarray_start_index = 0
-        largest_sum_subarray_end_index = 0
+        max_sum_subarray_start_index = 0
+        max_sum_subarray_end_index = 0
 
         for i in range(len(arr)):  # it should not be (len(arr) - 1) as it will fail in case the arr size is 1 
             curr_sum = 0
@@ -18,10 +18,10 @@ class Solution(object):
 
                 if curr_sum > max_sum:
                     max_sum = curr_sum
-                    largest_sum_subarray_start_index = i
-                    largest_sum_subarray_end_index = j
+                    max_sum_subarray_start_index = i
+                    max_sum_subarray_end_index = j
 
-        return max_sum, arr[largest_sum_subarray_start_index:largest_sum_subarray_end_index+1]
+        return max_sum, arr[max_sum_subarray_start_index:max_sum_subarray_end_index+1]
 
 # Driver code
 if __name__ == "__main__":

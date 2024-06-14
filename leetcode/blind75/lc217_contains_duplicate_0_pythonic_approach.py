@@ -3,7 +3,7 @@ Approach: Two Pythonic Approach. Prefer the First One (set one).
 
 Time Complexity: 
     Approach 1: O(n) Converting to set and comparing its len with len of original arr
-    Approach 2: O(n^2)
+    Approach 2: O(n) x O(n) = O(n^2)
 """
 
 
@@ -19,7 +19,7 @@ def has_duplicate(arr:List[int]) -> bool:
 def has_duplicate_using_my_list_count(arr: List[int]) -> bool:
 
     for elem in arr:
-        if arr.count(elem)>1:
+        if arr.count(elem)>1:   #Leo Note: Time Complexity of my_list.count(elem) is O(n) as it involves the scanning of the entire list to count the occurences of 'elem'
             return True
         
         return False

@@ -8,7 +8,7 @@ Time Complexity: Sorting the arr - O(nlog n)   +   Iterating the arr - O(n)     
 from typing import List
 
 def has_duplicates(arr:List[int])->bool:
-    arr.sort()  # In-place sorting of the array | Tim Sort algorithm (named after Tim Peters)
+    arr.sort()  # In-place sorting of the array | Tim Sort algorithm (named after Tim Peters) | TC = O(n log n)
     
     for i in range(len(arr)-1):
         if arr[i] == arr[i+1]:
@@ -16,7 +16,13 @@ def has_duplicates(arr:List[int])->bool:
     
     return False
 
-
+# Drive code
+if __name__ == "__main__":
+    #arr = [1,2,3,1]
+    #arr = [1,2,3,4]
+    arr = [1,1,1,3,3,4,3,2,4,2]
+    print(has_duplicates(arr))
+    
 
 """"
 Time Complexity: O(n log n) where n is the length of the array
@@ -42,6 +48,6 @@ Algorithm (Leo: Ignore this, kept only for template reference):
         This is accomplished by first ensuring that the number that would immediately preceed the current number is a 
         sequence is not present, as that number would necessarily be part of a longer sequence.
 
-SOl URL: https://leetcode.com/problems/contains-duplicate/solutions/3672475/4-method-s-c-java-python-beginner-friendly/
+Sol URL: https://leetcode.com/problems/contains-duplicate/solutions/3672475/4-method-s-c-java-python-beginner-friendly/
         
 """ 

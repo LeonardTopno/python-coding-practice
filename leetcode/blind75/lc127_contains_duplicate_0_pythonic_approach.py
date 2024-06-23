@@ -7,7 +7,7 @@ Time Complexity:
 """
 
 
-from typing import List
+from typing import List  # To provide support for type hint. Optional, Only for documentation.
 
 def has_duplicate(arr:List[int]) -> bool: 
     if len(set(arr)) == len(arr):

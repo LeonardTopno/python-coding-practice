@@ -13,7 +13,7 @@ class Solution(object):
             for j in range(i, len(arr)):
                 curr_sum += arr[j]
 
-                max_sum = max(max_sum, curr_sum)
+                max_sum = max(max_sum, curr_sum)    # Leo's Note: max(iterable) or min(iterable) has a Time Complexity of O(n), but it there are only two elements to compare then the Time Complexity is O(1)
 
         return max_sum
     

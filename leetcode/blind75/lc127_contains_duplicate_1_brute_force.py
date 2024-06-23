@@ -9,7 +9,7 @@ Time Complexity: O(n^2) or O(nxn)
 from typing import List 
 
 def has_duplicates(arr: List[int]) -> bool:
-    for i in range(len(arr)-1):
+    for i in range(len(arr)):       # Leo's note: I have removed len(arr)-1 
         for  j in range(i+1, len(arr)):
             if arr[i] == arr [j]:
                 return True
@@ -21,6 +21,7 @@ if __name__ == "__main__":
     #arr = [1,2,3,1]
     #arr = [1,2,3,4]
     arr = [1,1,1,3,3,4,3,2,4,2]
+    arr = [3]
     print(has_duplicates(arr))
 
 """"

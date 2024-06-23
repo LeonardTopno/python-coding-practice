@@ -34,7 +34,8 @@ def has_duplicates_improvised(arr: List[int]) -> bool:
     for elem in arr:
         if elem not in seen_set:
             seen_set.add(elem)
-            continue
+            continue    # used 'continue' to save a couple of milisec
+        
         else:  # elem is in set seen_set
             return True
 

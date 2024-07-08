@@ -1,0 +1,11 @@
+# Virtual Environment in VS Code
+
+We do not source it.
+
+source .\.venv\Script\activate
+
+We just do the following
+
+.\.venv\Script\activate
+
+

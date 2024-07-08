@@ -1,0 +1,9 @@
+
+O(n^2) > O(n log n) > O(n) > O(n) > O(1)
+
+
+Tim Sort Algorithm: 0(n log n) -> Best so far and is used by my_list.sort()  and sorted(my_iterable)
+
+my_list.count(elem): O(n)
+It ierates through each elem of the arr, hence O(n)
+

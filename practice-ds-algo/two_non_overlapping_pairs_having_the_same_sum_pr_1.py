@@ -1,12 +1,12 @@
 """
 Given an UNSORTED integer array, find TWO (only two, return after you find two) non-overlapping pairs in it having
-the same sum pf pair
+the same pair of sum
 """
 
 
 #  Function to find two non-overlapping pairs having the same sum in a list
 def find_pairs(arr):
-    # create an array
+    # create a dictionary
     # keys: sum of pairs
     # values: list, storing indices of pair, whose total is that sum
     lookup = {}
